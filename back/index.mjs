@@ -4,7 +4,7 @@ import OpenAI from "openai";
 // Function to read API key from file
 function readApiKeyFromFile() {
 	try {
-		const apiKey = readFileSync("key.key", "utf8").trim();
+		const apiKey = readFileSync("./secrets/key.key", "utf8").trim();
 		return apiKey;
 	} catch (error) {
 		console.error("Error reading API key from file:", error.message);

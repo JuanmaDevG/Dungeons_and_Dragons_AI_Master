@@ -1,5 +1,3 @@
-import fs from "fs";
-import path from "path";
 import express from "express";
 
 // PROCEDURES
@@ -16,7 +14,7 @@ export default () => {
 				if (response["success"]) {
 					return res.json({});
 				} else {
-					return next(console.log("PROCEDURE DIDN'T SUCCESS: " + page1));
+					return next(console.log("PROCEDURE DID NOT SUCCESS: " + page1));
 				}
 			})
 			.catch((error) => {
